@@ -1,5 +1,40 @@
-# telemetry_collector
+# Telemetry Collector
+
 Automatically build telemetry collector with telegraf, influxdb and chronograf, example of sensor paths is using native yang model and OpenConfig yang model of nx-os as example. `build.sh` script will create self-signled cerificates for TLS transport. Using docker images of telegraf, influxdb and chronograf to create services with docker-compose. tested with `telegraf>=1.12.1`, `influxdb>=1.8.0` and `chronograf>=1.8.4`.
+
+
+## Prerequisites
+
+Reserve the Model Driven Telemetry sandbox
+
+![](images/reserve_button.png)
+
+> You will need to be logged in to https://devnetsandbox.cisco.com/ before you can reserve.
+
+Take some time to reserve and familiarize yourself with the [Model Driven Telemetry Sandbox](https://devnetsandbox.cisco.com/RM/Diagram/Index/0e053963-b039-4a15-94f6-54db2f5ad61c?diagramType=Topology) on Devnet.
+Getting started is straightforward - once you click the above URL, click the Reserve button on the top right:
+
+> To view the dropdown menu with variable reservation options, click the edit button (pencil icon) next to schedule. Once your reservation is active, you can keep extending the duration if you start running out of time (with the maximum limit set to a total time of 2 week)
+
+
+![](images/reserve_session.png)
+
+Once reserved, expect an initial email (associated with your login) indicating that your sandbox environment is being set up.
+Within 10 minutes, the entire sandbox environment should be ready and you will get another email detailing the [Anyconnect](https://developer.cisco.com/site/devnet/sandbox/anyconnect/) server and credential information you need to connect to the same network as the sandbox environment.
+
+These instructions and more are detailed here: [Reserving and Connecting to a Devnet Sandbox](https://developer.cisco.com/docs/sandbox/#!first-reservation-guide/connect-to-sandbox-servers)
+
+## Connect to the Sandbox
+
+Once you are connected to the Anyconnect server (Your endpoint/gateway may vary)
+
+![](images/anyconnect.png)
+
+You should be able to ping the address `10.10.20.50` which represents the External NAT address of the virtualization host on which the devbox instances and the development environment (devbox) are running.
+
+The topology that you will have access to is shown below:
+
+![](images/mdt_sandbox.png)
 
 ## Requirements:
 docker-ce, openssl, docker-compose, any linux distribution, see Known Issues if trying it on MacOS
