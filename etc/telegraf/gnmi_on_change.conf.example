@@ -69,6 +69,16 @@ path = "/System/mac-items/table-items"
 subscription_mode = "on_change"
 
 [[inputs.cisco_telemetry_gnmi.subscription]]
+origin = "device"
+path = "/System/name"
+subscription_mode = "on_change"
+
+[[inputs.cisco_telemetry_gnmi.subscription]]
+origin = "device"
+path = "/System/systemUpTime"
+subscription_mode = "on_change"
+
+[[inputs.cisco_telemetry_gnmi.subscription]]
 origin = "openconfig"
 path = "/network-instances/network-instance/protocols/protocol/bgp/neighbors/neighbor/state"
 subscription_mode = "on_change"

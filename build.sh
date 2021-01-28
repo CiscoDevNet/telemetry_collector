@@ -20,15 +20,11 @@ TELEGRAF_CERT_PATH="$TELEGRAF_CONFIG/cert"
 GNMI_CERT_PASSWD="cisco123"
 
 # swtiches accept gNMI dial-in
-switches=( "172.25.74.70:50051" \
-           "172.25.74.61:50051" \
-           "172.25.74.87:50051" \
-           "172.25.74.88:50051" \
-)
+switches=( "10.10.20.40:50051" )
 
 # user on swtich for authentication, need network-operator role at least
-gnmi_user="telemetry"
-gnmi_password="cisco123"
+gnmi_user="admin"
+gnmi_password="RG!_Yw200"
 
 #For telegraf certificate
 country=US
