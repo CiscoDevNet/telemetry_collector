@@ -706,7 +706,7 @@
             "tempVar": ":source:",
             "values": [
                 {
-                    "value": "172.25.74.64",
+                    "value": "",
                     "type": "tagValue",
                     "selected": true
                 }

@@ -10,7 +10,7 @@ export INFLUX_DATA="`pwd`/influxdb"
 export CURRENT_UID=`id -u`
 export CURRENT_GID=`id -g`
 export TELEGRAF_IMAGE="telegraf:latest"
-export INFLUXDB_IMAGE="influxdb:1.8.4"
+export INFLUXDB_IMAGE="influxdb:1.7.11"
 export CHRONOGRAF_IMAGE="chronograf:latest"
 
 self=$0
